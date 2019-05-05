@@ -53,6 +53,12 @@ age
 touch
 death
 pain
+wheel
+fire
+myth
+robe
+mist
+fog
 
 |animate
 eye
@@ -72,6 +78,7 @@ fighter
 serpent
 scorpion
 soul
+dove
 
 |modifier
 yellow
@@ -99,6 +106,8 @@ vengeful
 winding
 stained
 open
+pure
+prim
 
 |nameForm
 // language 1
