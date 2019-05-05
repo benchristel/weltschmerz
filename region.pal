@@ -76,15 +76,20 @@ a large lake
 a vast desert
 a deep gorge
 a wild and forbidding forest
+a deep and tangled forest
+a persistent, soporific haze
+a misty labyrinth of mountains
 deep jungle
-a pleasant-looking valley from which none have ever returned
+a pleasant-looking valley from which no one has ever returned
 a narrow isthmus
 fjords
-volcanoes
+a river of lava
 frozen wastes
 a glacier
 fissures in the earth
-a network of caves
+fissures in the earth that belch sulfurous fumes
+mountains riddled with caves
+an immense stone wall
 
 |terrainType
 3@[slope] [groundCover]
@@ -100,6 +105,7 @@ roads
 a vast trade network
 ley lines
 stone walls
+a network of caves and tunnels
 
 |terrainFeature
 lakes
@@ -111,6 +117,9 @@ ancient ruins
 buttes
 craters
 watchtowers
+mesas
+menhirs
+dolmens
 
 |axis
 north-south
@@ -163,7 +172,8 @@ large
 <fauna>[preyBody]</fauna>
 
 |predatorBody
-[predatorFeature] [predatorSpecies.plural]
+[predatorFeature] [carnivore.plural]
+[predatorFeature] [omnivore.plural]
 
 |predatorFeature
 10@[animalFeature]
@@ -172,7 +182,6 @@ giant
 wild
 talking
 adorable
-fast-moving
 silent but deadly
 [animal]-like
 colorful
@@ -180,6 +189,7 @@ nocturnal
 elusive
 chirping
 barking
+whistling
 carnivorous
 man-eating
 dire
@@ -189,90 +199,124 @@ aggressive
 hungry
 vicious
 
-|predatorSpecies
-[animal]
-
 |preyBody
-[animal.plural]
-[animalFeature] [animal.plural]
+[herbivore.plural]
+[preyFeature] [herbivore.plural]
+[preyFeature] [omnivore.plural]
 
-|animalFeature
+|preyFeature
+10@[animalFeature]
+adorable
 poisonous
 enormous, lumbering
 pygmy
 talking
+tame
+shy, elusive
+armored
+flocking
+
+|animalFeature
 [adjective]
-adorable
 fast-moving
 [animal]-like
 colorful
 nocturnal
-shy, elusive
-tame
 chirping
 barking
 squirming
 yelling
+whistling
+hissing
 amphibious
+flying
+unpredictable
 
-|animal
-ant
-ape
-baboon
+|carnivore
 badger
-bat
-beetle
-bison
+basilisk
+bee
 black bear
+blink dog
 brown bear
-boar
-camel
+bugbear
 cat
 cheetah
 crocodile
-crow
-deer
 dinosaur
 dog
-donkey
+dragon
+[dragonColor] dragon
 eagle
-elephant
-frog
+ettin
 fox
-grasshopper
-halibut
 hawk
-horse
-lemur
 leopard
 lion
-lizard
 mantis
-monitor lizard
-monkey
-mule
 octopus
 owl
+owlbear
 polar bear
-pony
-rabbit
-rat
-raven
-reindeer
-rhinoceros
+raptor
 roc
-salmon
+scorpion
+serpent
 shark
-sheep
 snake
 spider
 squid
-squirrel
-termite
 tiger
-toad
 viper
+wasp
 weasel
 whale
 wolf
 wolverine
+
+|herbivore
+bison
+camel
+deer
+dinosaur
+donkey
+elephant
+grasshopper
+halibut
+horse
+lemur
+mule
+pony
+rabbit
+reindeer
+rhinoceros
+salmon
+sheep
+squirrel
+termite
+turtle
+
+|omnivore
+ant
+ape
+baboon
+bat
+beetle
+boar
+centipede
+crow
+frog
+lizard
+monitor lizard
+monkey
+rat
+raven
+toad
+worm
+
+|dragonColor
+black
+blue
+green
+red
+white
