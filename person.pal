@@ -19,10 +19,10 @@
 <person>[personName][personBody]</person>
 
 |personName*50
-<name>[nameBody] [familyName:recur]</name>
+<name><given>[nameBody]</given><family>[familyName:recur]</family></name>
 
 |personBody
-[homeland][profession][personPhysical][admiresList][despisesList]
+[homeland][profession][personPhysical][cynneddfList][admiresList][despisesList]
 
 |homeland
 <homeland>[regionName:recur]</homeland>
@@ -307,3 +307,32 @@ stinginess
 
 |familyName*10
 [nameBody]
+
+|cynneddfList
+4@
+[cynneddf]
+[cynneddf][cynneddf]
+
+|cynneddf
+<peculiarity>[cynneddfBody]</peculiarity>
+
+|cynneddfBody
+cannot be [harmed] by [bane]
+can only be killed by [bane]
+can only be killed by [bane] or [bane]
+cannot be seen when cloaked in [material]
+will die if he/she leaves the sight of [personName:recur]
+can see anyone who talks to [personName:recur], no matter how far off
+will die if he/she is not accompanied by [race.article]
+
+|bane
+[animal.plural]
+[weapon.article]
+[hardMaterial]
+[personName:recur]
+
+|harmed
+injured
+killed
+hurt
+harmed
